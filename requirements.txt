@@ -1,0 +1,10 @@
+streamlit
+torch
+torchaudio
+librosa
+soundfile
+numpy
+tqdm
+streamlit-audiorecorder
+sounddevice 
+wavio
