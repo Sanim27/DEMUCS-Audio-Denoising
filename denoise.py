@@ -207,52 +207,6 @@ if uploaded_file is not None:
 
 
     st.success("✅ Enhancement complete! Listen or download the enhanced audio.")
-
-# st.title("🔉 Real-time Audio Denoising with DEMUCS")
-
-# duration = st.slider("Recording Duration (seconds)", 1, 10, 3)
-# sample_rate = 16000
-
-# if st.button("🎤 Start Recording"):
-#     st.write("🎙️ Recording...")
-#     recorded_audio = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=1, dtype="int16")
-#     sd.wait()
-#     st.success("✅ Recording Complete!")
-    
-#     audio_bytes = BytesIO()
-#     wavio.write(audio_bytes, recorded_audio, sample_rate, sampwidth=2)
-#     audio_bytes.seek(0)
-#     st.audio(audio_bytes, format="audio/wav")
-    
-#     # noisy_audio, sr = librosa.load(audio_bytes, sr=16000)
-#     # enhanced_audio = enhance_audio(model, noisy_audio)
-    
-#     # output_buffer = BytesIO()
-#     # sf.write(output_buffer, enhanced_audio, samplerate=16000, format="WAV")
-#     # output_buffer.seek(0)
-    
-#     # st.audio(output_buffer, format="audio/wav")
-#     # st.download_button("Download Enhanced Audio", output_buffer, "enhanced_audio.wav", "audio/wav")
-
-
-
-#     # Load and process the noisy audio
-#     noisy_audio, sr = librosa.load(audio_bytes, sr=16000)
-#     enhanced_audio = enhance_audio(model, noisy_audio)
-
-#     # Save enhanced audio to buffer
-#     output_buffer = BytesIO()
-#     sf.write(output_buffer, enhanced_audio, samplerate=16000, format="WAV")
-#     output_buffer.seek(0)
-
-#     # Display both noisy and enhanced audio
-#     st.write("🔊 **Noisy Audio (Original Input)**")
-#     st.audio(audio_bytes, format="audio/wav")
-
-#     st.write("🎵 **Enhanced Audio (Denoised Output)**")
-#     st.audio(output_buffer, format="audio/wav")
-
-#     # Provide download option for enhanced audio
 #     st.download_button("Download Enhanced Audio", output_buffer, "enhanced_audio.wav", "audio/wav")
 
 
