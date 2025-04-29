@@ -207,7 +207,7 @@ if uploaded_file is not None:
 
 
     st.success("✅ Enhancement complete! Listen or download the enhanced audio.")
-#     st.download_button("Download Enhanced Audio", output_buffer, "enhanced_audio.wav", "audio/wav")
+    st.download_button("Download Enhanced Audio", output_buffer, "enhanced_audio.wav", "audio/wav")
 
 
 
